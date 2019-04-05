@@ -21,7 +21,7 @@ CREATE TABLE adminusers(
 	Username VARCHAR(50) NOT NULL,
 	Password VARCHAR(50) NOT NULL,
 	AdminLevel VARCHAR(50) NOT NULL,
-	Lastlogin DATE		 NOT NULL,
+	Lastlogin DATETIME		  DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (AdminID)
 	);
 
